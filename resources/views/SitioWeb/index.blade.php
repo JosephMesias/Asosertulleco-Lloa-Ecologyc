@@ -60,9 +60,9 @@
                 <div class="carousel-inner">
                     @foreach($getImagenes as $getImageness)
                     <div class="carousel-item active">
-                        <img src="{{$getImageness->imgURL}}" class="d-block w-100" alt="...">
+                        <img src="{{$getImageness->imgURL}}" class="d-block w-100" alt="Imágenes del carrusel">
                     </div>
-                    @foreach
+                    @endforeach
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -101,6 +101,8 @@
                 @endforeach
             </div>
         </div>
+
+        <button><a href="/paneldecontrol">PANEL DE CONTROL</a></button>
     </main>
     <footer id="footer">
         <div class="footer-redes">

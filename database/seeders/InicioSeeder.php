@@ -26,7 +26,7 @@ class InicioSeeder extends Seeder
         
         DB::table('misvis')->insert([
             'texto' => $faker->text,
-            'url' => $faker->url
+            'image' => $faker->url
         ]);
         
         DB::table('servicios')->insert([

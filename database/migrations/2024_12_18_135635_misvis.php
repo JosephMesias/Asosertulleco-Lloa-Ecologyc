@@ -16,10 +16,8 @@ class Misvis extends Migration
         Schema::create('misvis', function(Blueprint $table){
             $table->id();
             $table->text('texto');
-            $table->text('url');
+            $table->text('image');
             $table->enum('status',['ACTIVE','DESACTIVATE'])->default('ACTIVE');
-            /*$table->unsignedBigInteger('imagenes_id');
-            $table->foreign('imagenes_id')->references('id')->on('imagenes');*/
             $table->timestamps();
         });
     }
